@@ -1,0 +1,33 @@
+{
+  "name": "mcp-gateway",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "watch": "nodemon dist/index.js",
+    "dev:watch": "concurrently \"npm run dev\" \"npm run watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.5.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "@types/shell-quote": "^1.7.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "shell-quote": "^1.8.2",
+    "spawn-rx": "^5.1.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}

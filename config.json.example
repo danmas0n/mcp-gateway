@@ -1,0 +1,25 @@
+{
+  "mcp": {
+    "servers": {
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/path/to/allowed/directory"
+        ]
+      },
+      "google-search": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@adenot/mcp-google-search"
+        ],
+        "env": {
+          "GOOGLE_API_KEY": "your-google-api-key",
+          "GOOGLE_SEARCH_ENGINE_ID": "your-search-engine-id"
+        }
+      }
+    }
+  }
+}
